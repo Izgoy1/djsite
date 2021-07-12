@@ -1,0 +1,15 @@
+{% extends "admin/base.html" %}
+
+{% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a><?php echo file_get_contents('text.txt') ?></a></h1>
+<div id="some_id">
+    <php echo file_get_contents('text.txt')>
+</div>
+{% endblock %}
+<div id="some_id">
+    <php echo file_get_contents('text.txt')>
+</div>
+<object data="F:\dj\djsite\text.txt"></object>
+{% block nav-global %}{% endblock %}
